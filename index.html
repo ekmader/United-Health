@@ -4,144 +4,176 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acute Cancer Cluster Following Snack Product Recall</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 40px;
-            max-width: 900px;
-        }
-        h1, h2, h3, h4 {
-            color: #003366;
-        }
-        .authors, .institutions {
-            font-style: italic;
-            margin-bottom: 20px;
-        }
-        figure {
-            text-align: center;
-            margin: 20px 0;
-        }
-        figcaption {
-            font-size: 0.9em;
-            color: #555;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css"> <!-- Your CSS file -->
 </head>
 <body>
 
-    <h1>Acute Cancer Cluster Following a Nationwide Snack Product Recall</h1>
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+        <div class="header-left">
+            <div class="site-logo">Food Safety Journal</div>
+        </div>
+        <div class="header-right">
+            <a href="#abstract">Abstract</a>
+            <a href="#introduction">Introduction</a>
+            <a href="#methods">Methods</a>
+            <a href="#results">Results</a>
+            <a href="#discussion">Discussion</a>
+        </div>
+        <!-- Hamburger for mobile -->
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+    </header>
 
-    <div class="authors">
-        David Barrow<sup>1</sup>, Lina M. Sørensen<sup>2</sup>, Rafael K. Nguyen<sup>3</sup>
+    <!-- Hamburger toggle -->
+    <input type="checkbox" id="menu-toggle">
+
+    <!-- ================= SIDE MENU ================= -->
+    <nav class="side-menu">
+        <ul>
+            <li><a href="#abstract">Abstract</a></li>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#background">Background</a></li>
+            <li><a href="#methods">Methods</a></li>
+            <li><a href="#results">Results</a></li>
+            <li><a href="#discussion">Discussion</a></li>
+            <li><a href="#conclusion">Conclusion</a></li>
+            <li><a href="#figures">Figures</a></li>
+        </ul>
+    </nav>
+
+    <!-- ================= PAGE LAYOUT ================= -->
+    <div class="page-container">
+        <article class="article">
+            
+            <h1 class="article-title">Acute Cancer Cluster Following a Nationwide Snack Product Recall</h1>
+            
+            <div class="authors">David Barrow<sup>1</sup>, Lina M. Sørensen<sup>2</sup>, Rafael K. Nguyen<sup>3</sup></div>
+            <div class="affiliations">
+                1. Department of Epidemiology, School of Public Health, Northeastern United States<br>
+                2. Center for Food Safety and Risk Modeling, University of Copenhagen<br>
+                3. Department of Systems Biology, Institute for Translational Medicine, New York, NY
+            </div>
+
+            <section id="abstract" class="abstract">
+                <h2>Abstract</h2>
+                <p>
+                    In June 2025, David Bar Co. announced a nationwide voluntary recall of snack bars distributed between March and June 2025. Concurrently, an unusually high number of acute cancer diagnoses were reported within a short temporal window following consumption of the recalled products.
+                </p>
+                <p>
+                    A retrospective cohort analysis was performed using reported exposure windows, diagnosis timing, and cancer subtype distribution. Latency expectations for carcinogenesis were compared against observed timelines to evaluate biological plausibility. Risk communication and recall-response dynamics were also assessed.
+                </p>
+                <p>
+                    Findings demonstrate a mismatch between known oncogenic latency periods and the reported three-day surge in diagnoses. This study highlights the importance of latency-aware epidemiological analysis, responsible risk communication, and differentiation between correlation and causation during public health emergencies.
+                </p>
+            </section>
+
+            <section id="introduction" class="article-body">
+                <h2>Introduction</h2>
+                <p>
+                    Food recalls are a critical component of public health protection, particularly when contamination poses acute or chronic health risks. While many recalls are associated with gastrointestinal illness or toxic exposure, associations with cancer demand heightened scrutiny due to the long latency typically required for oncogenesis.
+                </p>
+                <p>
+                    In this case, a voluntary recall by David Bar Co. coincided with reports of intrafetarile, multi-sclerocal, and thoracic cancers diagnosed within an unusually compressed timeframe. This paper analyzes the epidemiological, toxicological, and public health implications of this cluster.
+                </p>
+            </section>
+
+            <section id="background">
+                <h2>Background: Product Recall and Initial Reports</h2>
+                <p>
+                    In June 2025, David Bar Co. announced an immediate voluntary recall of all snack bars shipped nationwide between March and June 2025. Retailers were instructed to remove products from shelves, and consumers were advised not to consume them.
+                </p>
+                <p>
+                    Within three days of the announcement, hundreds of cancer cases were reportedly identified among recent consumers, prompting widespread concern and medical advisories.
+                </p>
+            </section>
+
+            <section id="methods">
+                <h2>Methods</h2>
+                <h3>Epidemiological Modeling</h3>
+                <p>
+                    A cohort of 250,000 exposed individuals was generated based on national snack distribution estimates. Cancer incidence rates were compared against baseline population data.
+                </p>
+                <h3>Latency Analysis</h3>
+                <p>
+                    Known latency periods for solid tumors and neurodegenerative-associated cancers were used as reference standards (typically ranging from 5–40 years).
+                </p>
+                <h3>Risk Communication Assessment</h3>
+                <p>
+                    Public messaging timelines were evaluated to understand how early reports may amplify perceived causality in the absence of mechanistic evidence.
+                </p>
+            </section>
+
+            <section id="results">
+                <h2>Results</h2>
+                <h3>Temporal Inconsistency</h3>
+                <p>
+                    Modeled diagnosis timing showed cancer detection occurring within days to weeks of product consumption, orders of magnitude faster than biologically plausible for carcinogenesis.
+                </p>
+                <h3>Cancer Type Distribution</h3>
+                <p>
+                    The diversity of cancer subtypes lacked a unifying mechanistic pathway, weakening causal inference.
+                </p>
+                <h3>Statistical Signal</h3>
+                <p>
+                    Observed incidence spikes were consistent with reporting bias and heightened diagnostic surveillance rather than true disease emergence.
+                </p>
+            </section>
+
+            <section id="discussion">
+                <h2>Discussion</h2>
+                <p>
+                    This case highlights the challenge in public health crises of distinguishing coincidental clustering from causation. Cancer development requires cumulative genetic damage, clonal expansion, and immune evasion—processes incompatible with acute exposure timelines.
+                </p>
+                <p>
+                    The scenario also illustrates how fear-driven medical advisories may overwhelm healthcare systems and distort public understanding if not grounded in mechanistic evidence.
+                </p>
+            </section>
+
+            <section id="public-health">
+                <h2>Public Health Implications</h2>
+                <ul>
+                    <li>Importance of latency-aware analysis before issuing disease-specific warnings</li>
+                    <li>Need for interdisciplinary review (toxicology, oncology, epidemiology)</li>
+                    <li>Risks of premature causal attribution in mass communication</li>
+                </ul>
+            </section>
+
+            <section id="limitations">
+                <h2>Limitations</h2>
+                <p>
+                    Results are constrained by modeled assumptions rather than confirmed data. However, the framework reflects established epidemiological principles.
+                </p>
+            </section>
+
+            <section id="conclusion">
+                <h2>Conclusion</h2>
+                <p>
+                    While food recalls are essential for consumer safety, claims linking short-term exposure to immediate cancer onset must be rigorously evaluated. Biological plausibility is a necessary prerequisite for causal inference and responsible public health messaging.
+                </p>
+            </section>
+
+            <section id="figures" class="figures">
+                <h2>Figures</h2>
+                <figure>
+                    <div class="figure-placeholder">Figure 1: Modeled timeline comparing snack bar exposure and reported cancer diagnosis onset</div>
+                    <figcaption>Figure 1. Modeled timeline comparing snack bar exposure and reported cancer diagnosis onset</figcaption>
+                </figure>
+                <figure>
+                    <div class="figure-placeholder">Figure 2: Expected oncogenic latency periods versus reported diagnosis intervals</div>
+                    <figcaption>Figure 2. Expected oncogenic latency periods versus reported diagnosis intervals</figcaption>
+                </figure>
+                <figure>
+                    <div class="figure-placeholder">Figure 3: Simulated incidence rates compared to national cancer baselines</div>
+                    <figcaption>Figure 3. Simulated incidence rates compared to national cancer baselines</figcaption>
+                </figure>
+            </section>
+
+        </article>
     </div>
-    <div class="institutions">
-        1. Department of Epidemiology, School of Public Health, Northeastern United States<br>
-        2. Center for Food Safety and Risk Modeling, University of Copenhagen<br>
-        3. Department of Systems Biology, Institute for Translational Medicine, New York, NY
-    </div>
-
-    <h2>Abstract</h2>
-    <p>
-        In June 2025, David Bar Co. announced a nationwide voluntary recall of snack bars distributed between March and June 2025. Concurrently, an unusually high number of acute cancer diagnoses were reported within a short temporal window following consumption of the recalled products.
-    </p>
-    <p>
-        A retrospective cohort analysis was performed using reported exposure windows, diagnosis timing, and cancer subtype distribution. Latency expectations for carcinogenesis were compared against observed timelines to evaluate biological plausibility. Risk communication and recall-response dynamics were also assessed.
-    </p>
-    <p>
-        Findings demonstrate a mismatch between known oncogenic latency periods and the reported three-day surge in diagnoses. This study highlights the importance of latency-aware epidemiological analysis, responsible risk communication, and differentiation between correlation and causation during public health emergencies.
-    </p>
-
-    <h2>Introduction</h2>
-    <p>
-        Food recalls are a critical component of public health protection, particularly when contamination poses acute or chronic health risks. While many recalls are associated with gastrointestinal illness or toxic exposure, associations with cancer demand heightened scrutiny due to the long latency typically required for oncogenesis.
-    </p>
-    <p>
-        In this case, a voluntary recall by David Bar Co. coincided with reports of intrafetarile, multi-sclerocal, and thoracic cancers diagnosed within an unusually compressed timeframe. This paper analyzes the epidemiological, toxicological, and public health implications of this cluster.
-    </p>
-
-    <h2>Background: Product Recall and Initial Reports</h2>
-    <p>
-        In June 2025, David Bar Co. announced an immediate voluntary recall of all snack bars shipped nationwide between March and June 2025. Retailers were instructed to remove products from shelves, and consumers were advised not to consume them.
-    </p>
-    <p>
-        Within three days of the announcement, hundreds of cancer cases were reportedly identified among recent consumers, prompting widespread concern and medical advisories.
-    </p>
-
-    <h2>Methods</h2>
-
-    <h3>Epidemiological Modeling</h3>
-    <p>
-        A cohort of 250,000 exposed individuals was generated based on national snack distribution estimates. Cancer incidence rates were compared against baseline population data.
-    </p>
-
-    <h3>Latency Analysis</h3>
-    <p>
-        Known latency periods for solid tumors and neurodegenerative-associated cancers were used as reference standards (typically ranging from 5–40 years).
-    </p>
-
-    <h3>Risk Communication Assessment</h3>
-    <p>
-        Public messaging timelines were evaluated to understand how early reports may amplify perceived causality in the absence of mechanistic evidence.
-    </p>
-
-    <h2>Results</h2>
-
-    <h3>Temporal Inconsistency</h3>
-    <p>
-        Modeled diagnosis timing showed cancer detection occurring within days to weeks of product consumption, orders of magnitude faster than biologically plausible for carcinogenesis.
-    </p>
-
-    <h3>Cancer Type Distribution</h3>
-    <p>
-        The diversity of cancer subtypes lacked a unifying mechanistic pathway, weakening causal inference.
-    </p>
-
-    <h3>Statistical Signal</h3>
-    <p>
-        Observed incidence spikes were consistent with reporting bias and heightened diagnostic surveillance rather than true disease emergence.
-    </p>
-
-    <h2>Discussion</h2>
-    <p>
-        This case highlights the challenge in public health crises of distinguishing coincidental clustering from causation. Cancer development requires cumulative genetic damage, clonal expansion, and immune evasion—processes incompatible with acute exposure timelines.
-    </p>
-    <p>
-        The scenario also illustrates how fear-driven medical advisories may overwhelm healthcare systems and distort public understanding if not grounded in mechanistic evidence.
-    </p>
-
-    <h2>Public Health Implications</h2>
-    <ul>
-        <li>Importance of latency-aware analysis before issuing disease-specific warnings</li>
-        <li>Need for interdisciplinary review (toxicology, oncology, epidemiology)</li>
-        <li>Risks of premature causal attribution in mass communication</li>
-    </ul>
-
-    <h2>Limitations</h2>
-    <p>
-        Results are constrained by modeled assumptions rather than confirmed data. However, the framework reflects established epidemiological principles.
-    </p>
-
-    <h2>Conclusion</h2>
-    <p>
-        While food recalls are essential for consumer safety, claims linking short-term exposure to immediate cancer onset must be rigorously evaluated. Biological plausibility is a necessary prerequisite for causal inference and responsible public health messaging.
-    </p>
-
-    <h2>Figures</h2>
-    <figure>
-        <img src="figure1.png" alt="Modeled timeline comparing snack bar exposure and reported cancer diagnosis onset">
-        <figcaption>Figure 1. Modeled timeline comparing snack bar exposure and reported cancer diagnosis onset</figcaption>
-    </figure>
-
-    <figure>
-        <img src="figure2.png" alt="Expected oncogenic latency periods versus reported diagnosis intervals">
-        <figcaption>Figure 2. Expected oncogenic latency periods versus reported diagnosis intervals</figcaption>
-    </figure>
-
-    <figure>
-        <img src="figure3.png" alt="Simulated incidence rates compared to national cancer baselines">
-        <figcaption>Figure 3. Simulated incidence rates compared to national cancer baselines</figcaption>
-    </figure>
 
 </body>
 </html>
